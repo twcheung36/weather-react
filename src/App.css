@@ -1,38 +1,102 @@
-.App {
+.App .weather-temperature,
+.time-date,
+#description {
+  text-align: right;
+}
+
+.App #temperature-numbers {
+  color: black;
+}
+
+.App .day-trend {
+  text-transform: uppercase;
+}
+
+.App .container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 18px;
+  color: #2575fc;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 0.5cm;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.App .city {
+  font-weight: bold;
+}
+
+.App .weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.App .weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.App .location {
+  margin-bottom: 15px;
+}
+
+.App .textbox,
+.day-trend,
+#forecast {
+  margin-bottom: 10px;
+}
+
+.App .time-date,
+.city,
+#description {
+  text-transform: capitalize;
+}
+
+.App .moreinfo {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .hourly-forecast {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #30cfd0;
+  border-radius: 0.2cm;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .day-trend {
+  text-align: center;
+  border: 1px solid #30cfd0;
+  border-radius: 0.2cm;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App button {
+  display: block;
+  padding: 10px auto;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.App button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App img {
+  max-width: 22%;
+}
+
+.App img.icon {
+  max-width: 80%;
+}
+
+.App #units {
+  font-size: 22px;
+}
+
+.App .footer {
+  text-align: left;
+  font-size: 12px;
 }
