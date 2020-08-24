@@ -21,13 +21,10 @@ function App() {
               />
               <strong id="temperature-numbers"> 27 </strong>
               <span id="units">
-                <a href="#" id="celsius" class="active">
+                <span id="celsius" class="active">
                   °C
-                </a>{" "}
-                |
-                <a href="#" id="fahrenheit">
-                  °F
-                </a>
+                </span>
+                |<span id="fahrenheit">°F</span>
               </span>
             </h1>
           </div>
